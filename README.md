@@ -21,7 +21,7 @@ Telegram-бот для анонімного збору відгуків спів
 - **Java 17**
 - **Spring Boot 2.7**
 - **Hibernate / JPA**
-- **PostgreSQL **
+- **PostgreSQL**
 - **OpenAI API (ChatGPT)**
 - **Google Docs API**
 - **Telegram Bots API**
@@ -55,3 +55,4 @@ src/main/java/org/example
 Розроблено в рамках навчального проекту.
 
 Вдосконалюється 🚀
+
