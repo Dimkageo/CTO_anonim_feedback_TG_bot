@@ -40,7 +40,6 @@ public class TelegramBot extends TelegramLongPollingBot {
         List<BotCommand> botCommands = new ArrayList<>();
         botCommands.add(new BotCommand("/help", "Допомога."));
         botCommands.add(new BotCommand("/reset", "Перезавантаження."));
-        botCommands.add(new BotCommand("/pb", "Отримати курс валюти."));
 
         SetMyCommands setMyCommands = new SetMyCommands();
         setMyCommands.setCommands(botCommands);
@@ -121,3 +120,4 @@ public class TelegramBot extends TelegramLongPollingBot {
         return botToken;
     }
 }
+
