@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  db_pg_tg_15:
+    image: postgres:15
+    container_name: db_pg_tg_15
+    environment:
+      POSTGRES_DB: tg_user_db      # краще не використовувати ім’я як класу TgUser
+      POSTGRES_USER: tg_user
+      POSTGRES_PASSWORD: tg_pas
+    ports:
+      - "5433:5432"                # локальний порт 5433 → контейнер 5432
+    volumes:
+      - db_pg_tg_15_data:/var/lib/postgresql/data   # щоб дані зберігалися
+
+volumes:
+  db_pg_tg_15_data:
